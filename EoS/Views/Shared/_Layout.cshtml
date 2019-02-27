@@ -40,27 +40,6 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
 <div id="preloader"></div>
-    @*<header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EoS</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>*@
     <header>
         <!-- header-area start -->
         <div id="sticker" class="header-area">
@@ -80,7 +59,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <a class="navbar-brand page-scroll sticky-logo" asp-area="" asp-controller="Home" asp-action="Index">
                                     <h1><span>E</span>oS</h1>
                                     <!-- Uncomment below if you prefer to use an image logo -->
                                     <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -90,36 +69,22 @@
                             <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#about">About</a>
+                                        <a class="page-scroll" href="">Về chúng tôi</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#services">Services</a>
+                                        <a class="page-scroll" asp-area="" asp-controller="Home" asp-action="Privacy">Chi tiết dịch vụ</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#team">Team</a>
+                                        <a class="page-scroll" href="#portfolio">Danh mục đầu tư</a>
                                     </li>
-                                    <li>
-                                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                                    </li>
-
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            Drop Down<span class="caret"></span>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href=#>Drop Down 1</a></li>
-                                            <li><a href=#>Drop Down 2</a></li>
-                                        </ul>
-                                    </li>
-
                                     <li>
                                         <a class="page-scroll" href="#blog">Blog</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#contact">Contact</a>
+                                        <a class="page-scroll" href="#contact">Liên hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -133,13 +98,9 @@
         <!-- header-area end -->
     </header>
     <!-- header end -->
-    <div class="">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
+        
             @RenderBody()
-        </main>
-    </div>
-
+       
     <!-- Start Footer bottom Area -->
     <footer>
         <div class="footer-area">
@@ -149,12 +110,13 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <div class="footer-logo">
-                                    <h2><span>e</span>Business</h2>
+                                    <h2><span>E</span>oS</h2>
                                 </div>
 
                                 <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                                    Excell-on Consulting Services (EoS) giúp các tổ chức phát triển kinh doanh và thương mại chiến lược và các giải pháp sáng tạo. 
+                                    Những giải pháp này cho phép họ (các tổ chức, nói khách hàng của Excell-on Dịch vụ Tư vấn) khách hàng có thể tận dụng các công nghệ mới để tạo ra các sản phẩm và dịch vụ sáng tạo cho nền kinh tế.
+                                    Đội ngũ tư vấn của họ vẫn tập trung vào việc xác định, tối ưu hóa, và sắp xếp chiến lược kinh doanh và CNTT khách hàng của họ.
                                 </p>
                                 <div class="footer-icons">
                                     <ul>
@@ -179,14 +141,14 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="footer-content">
                             <div class="footer-head">
-                                <h4>information</h4>
+                                <h4>Thông tin</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                   Số 8, Tôn Thất Thuyết, P. Mỹ Đình 2, Q. Nam Từ Liêm, Tp. Hà Nội.
                                 </p>
                                 <div class="footer-contacts">
                                     <p><span>Tel:</span> +123 456 789</p>
-                                    <p><span>Email:</span> contact@example.com</p>
-                                    <p><span>Working Hours:</span> 9am-5pm</p>
+                                    <p><span>Email:</span> Ecellon@gmail.com</p>
+                                    <p><span>Working Hours:</span>8h-12h, thứ 2,4,6 hàng tuần</p>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +197,7 @@
 </footer>
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
+fr
 <!-- JavaScript Libraries -->
 <script src="~/lib/jquery/jquery.min.js"></script>
 <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>

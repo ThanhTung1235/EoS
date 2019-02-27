@@ -12,9 +12,18 @@
     <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
           rel="stylesheet">
 
+=======
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+        rel="stylesheet">
+    <!-- datetime piker -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- =======================================================
+>>>>>>> 0f178b04444d6ab931ee8b313fa4f974dc6dd051
     <!-- Bootstrap CSS File -->
     <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -39,7 +48,11 @@
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
 
+<<<<<<< HEAD
     <div id="preloader"></div>
+=======
+
+>>>>>>> 0f178b04444d6ab931ee8b313fa4f974dc6dd051
     <header>
         <!-- header-area start -->
         <div id="sticker" class="header-area">
@@ -59,7 +72,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <a class="navbar-brand page-scroll sticky-logo" asp-area="" asp-controller="Home" asp-action="Index">
                                     <h1><span>E</span>oS</h1>
                                     <!-- Uncomment below if you prefer to use an image logo -->
                                     <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -69,22 +82,26 @@
                             <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#about">About</a>
+                                        <a class="page-scroll" href="">Về chúng tôi</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#services">Services</a>
+                                        <a class="page-scroll" asp-area="" asp-controller="Home" asp-action="Privacy">Chi tiết dịch vụ</a>
                                     </li>
                                     <li>
+<<<<<<< HEAD
                                         <a class="page-scroll" href="#portfolio">Portfolio</a>
+=======
+                                        <a class="page-scroll" href="#portfolio">Danh mục đầu tư</a>
+>>>>>>> 0f178b04444d6ab931ee8b313fa4f974dc6dd051
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#blog">Blog</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#contact">Contact</a>
+                                        <a class="page-scroll" href="#contact">Liên hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -98,13 +115,7 @@
         <!-- header-area end -->
     </header>
     <!-- header end -->
-    <div class="">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
+    @RenderBody()
     <!-- Start Footer bottom Area -->
     <footer>
         <div class="footer-area">
@@ -114,12 +125,13 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <div class="footer-logo">
-                                    <h2><span>e</span>Business</h2>
+                                    <h2><span>E</span>oS</h2>
                                 </div>
 
                                 <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                                    Excell-on Consulting Services (EoS) giúp các tổ chức phát triển kinh doanh và thương mại chiến lược và các giải pháp sáng tạo.
+                                    Những giải pháp này cho phép họ (các tổ chức, nói khách hàng của Excell-on Dịch vụ Tư vấn) khách hàng có thể tận dụng các công nghệ mới để tạo ra các sản phẩm và dịch vụ sáng tạo cho nền kinh tế.
+                                    Đội ngũ tư vấn của họ vẫn tập trung vào việc xác định, tối ưu hóa, và sắp xếp chiến lược kinh doanh và CNTT khách hàng của họ.
                                 </p>
                                 <div class="footer-icons">
                                     <ul>
@@ -144,14 +156,14 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="footer-content">
                             <div class="footer-head">
-                                <h4>information</h4>
+                                <h4>Thông tin</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    Số 8, Tôn Thất Thuyết, P. Mỹ Đình 2, Q. Nam Từ Liêm, Tp. Hà Nội.
                                 </p>
                                 <div class="footer-contacts">
                                     <p><span>Tel:</span> +123 456 789</p>
-                                    <p><span>Email:</span> contact@example.com</p>
-                                    <p><span>Working Hours:</span> 9am-5pm</p>
+                                    <p><span>Email:</span> Ecellon@gmail.com</p>
+                                    <p><span>Working Hours:</span>8h-12h, thứ 2,4,6 hàng tuần</p>
                                 </div>
                             </div>
                         </div>
@@ -200,11 +212,17 @@
     </footer>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<<<<<<< HEAD
 
     <!-- JavaScript Libraries -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+=======
+    
+    <!-- JavaScript Libraries -->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+>>>>>>> 0f178b04444d6ab931ee8b313fa4f974dc6dd051
     <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="~/lib/venobox/venobox.min.js"></script>
@@ -218,9 +236,18 @@
 
     <!-- Contact Form JavaScript File -->
     <script src="~/contactform/contactform.js"></script>
+<<<<<<< HEAD
 
     <!-- end datetime picker -->
     <script src="~/js/main.js"></script>
+=======
+    <!-- datetime picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- end datetime picker -->
+    <script src="~/js/main.js"></script>
+    <script src="~/js/script.js"></script>
+>>>>>>> 0f178b04444d6ab931ee8b313fa4f974dc6dd051
     @RenderSection("Scripts", required: false)
 </body>
 </html>
